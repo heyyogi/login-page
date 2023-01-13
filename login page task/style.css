@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.login_card{
+    padding: 20px ;
+    margin: 10px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.text{
+    margin-bottom: 30px;
+}
+
+.banner img{
+    width: 130px;
+    height: 115px;
+}
+
+.login_card ,h1{
+    padding: 2px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+    text-transform: uppercase;
+    
+}
+
+.ip{
+    padding: 20px;
+    margin: 1px;
+}
+
+
+input[type=text] {
+    width: 80%;
+    height: 20%;
+    padding:10px;
+    border-radius:25px;
+    border: 1px solid ;
+    margin: 12px;
+}
+
+input[type=password] {
+    width: 80%;
+    height: 20%;
+    padding:10px;
+    border-radius:25px;
+    border: 1px solid ;
+}
+
+.button {
+    width: 71%;
+    color: wheat;
+    height: 10%;
+    padding:10px;
+    border-radius:25px;
+    border: none;
+    background-color: #E70B89;
+    cursor: pointer;
+  }
+  
+
+.navMenu {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: capitalize;
+  position: relative;
+  transition: all 0.9s linear;
+}
+
+.nav a:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color:#000 ;
+}
+
+
+.nav a:hover::before{
+    width: 100%;
+    background-color:  #E70B89;
+    font-size: large;
+}
+
+
+ul, li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.forgot-pass span{
+    padding: 20px;
+    display: grid;
+    margin-left: 30px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 10px;
+    text-transform:capitalize;
+    color: #E70B89;
+}
+ 
+
+span{
+    cursor: pointer;
+}
+
+p{
+    text-transform:lowercase ;
+}
+
+.social{
+    cursor: pointer;
+}
+
+
+.google, .twitter, .facebook{
+    padding: 8px;
+    margin: 20px;
+    width: 40px;
+    cursor: pointer;
+    border: 1px solid #EAEAEA;
+    border-radius: 50%;
+}
+
+
+.google:hover, .twitter:hover, .facebook:hover{
+    transform: scale(1.5);
+}
+
+
+.bottom-txt {
+    color: #000;
+    font-weight: lighter;
+    font-size: 9px;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.bottom-txt span{
+    color: #E70B89;;
+    cursor: pointer;
+}
